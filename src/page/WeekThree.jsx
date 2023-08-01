@@ -5,7 +5,7 @@ const WeekThree = () => {
     const [weeks, setWeeks] = useState([])
   
   useEffect(() => {
-    fetch('http://localhost:5000/weeks')
+    fetch('https://week-backend-mdnadiruzzamannibras.vercel.app/weeks')
       .then(res => res.json())
     .then(data=> setWeeks(data))
   }, [])
@@ -21,7 +21,7 @@ const WeekThree = () => {
                     
                 </>
             ) : (
-                <h1>No data available for Week 1</h1>
+                <h1>No data available for Week</h1>
             )}
         </div>
     );
